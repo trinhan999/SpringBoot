@@ -1,0 +1,16 @@
+package com.example.demo
+
+import spock.lang.Specification
+
+class PowTest extends Specification {
+    def "numbers to the power of two"(int a, int b, int c) {
+        expect:
+            Math.pow(a, b) == c
+        where:
+            a | b | c
+            1 | 2 | 1
+            2 | 2 | 4
+            3 | 2 | 9
+    }
+
+}
