@@ -12,5 +12,10 @@
             <column name="name" value="Tom"/>
             <column name="address" value="USA"/>
         </insert>
+        <insert tableName="person">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="nhan"/>
+            <column name="address" value="VN"/>
+        </insert>
     </changeSet>
 </databaseChangeLog>
